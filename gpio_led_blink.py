@@ -4,7 +4,7 @@
 import RPi.GPIO as GPIO
 import time
  
-# 使うGPIOピンの番号
+#使うGPIOピンの番号
 IO_NO = 4
  
 print("press ^C to exit program ...\n")
