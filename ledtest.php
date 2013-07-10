@@ -4,7 +4,7 @@
 </head>
 <body>
 	<?php
-		if($_REQUEST[start] == TRUE){
+		if($_REQUEST['start'] == TRUE){
 			echo "<P>hoge</P>";
 		}
 	?>
