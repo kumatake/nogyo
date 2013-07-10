@@ -8,6 +8,6 @@
 			echo "<P>hoge</P>";
 		}
 	?>
-	<input name="startbutton" type="start" value="LED点灯！">
+	<input name="start" type="button" value="LED点灯！">
 </body>
 </html>>
