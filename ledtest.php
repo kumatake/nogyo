@@ -9,6 +9,6 @@
 		}
 
 	?>
-	<input name="start" type="button" value="LED点灯！" onclick="<?php test(); ?>">
+	<input name="start" type="button" value="LED点灯！" onclick="<?php test() ?>">
 </body>
 </html>>
