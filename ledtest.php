@@ -4,10 +4,11 @@
 </head>
 <body>
 	<?php
-		if($_REQUEST['start'] == TRUE){
-			echo "<P>hoge</P>";
+		function test(){
+			echo "<P>ひゃっひょう</P>";
 		}
+
 	?>
-	<input name="start" type="button" value="LED点灯！">
+	<input name="start" type="button" value="LED点灯！" onclick="<?php test(); ?>">
 </body>
 </html>>
