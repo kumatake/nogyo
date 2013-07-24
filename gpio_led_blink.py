@@ -6,6 +6,7 @@ import time
  
 #使うGPIOピンの番号
 IO_NO = 4
+IO_NO2 = 17
  
 print("press ^C to exit program ...\n")
  
@@ -15,13 +16,16 @@ GPIO.setmode(GPIO.BCM)
 #GPIO.setmode(GPIO.BOARD)
  
 GPIO.setup(IO_NO, GPIO.OUT)
+GPIO.setup(IO_NO2, GPIO.OUT)
  
 try:
- while True:
-  GPIO.output(IO_NO, True)
-  time.sleep(0.5)
-  GPIO.output(IO_NO, False)
-  time.sleep(0.5)
+	while True:
+ 		GPIO.output(IO_NO, True)
+ 		GPIO.output(IO_NO2, True)
+ 		time.sleep(5)
+ 		GPIO.output(IO_NO, False)
+ 		GPIO.output(IO_NO2, False)
+ 		time.sleep(5)
 except KeyboardInterrupt:
  print("detect key interrupt\n")
  
