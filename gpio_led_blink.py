@@ -17,15 +17,17 @@ GPIO.setmode(GPIO.BCM)
  
 GPIO.setup(IO_NO, GPIO.OUT)
 GPIO.setup(IO_NO2, GPIO.OUT)
+
+time.sleep(64800)
  
 try:
 	while True:
  		GPIO.output(IO_NO, True)
  		GPIO.output(IO_NO2, True)
- 		time.sleep(5)
+ 		time.sleep(10)
  		GPIO.output(IO_NO, False)
  		GPIO.output(IO_NO2, False)
- 		time.sleep(5)
+ 		time.sleep(86400)
 except KeyboardInterrupt:
  print("detect key interrupt\n")
  
